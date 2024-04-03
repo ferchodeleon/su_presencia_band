@@ -1,9 +1,9 @@
 import Logo from "../assets/logo/logo_white.svg";
 import "../style/header.css";
 
-export const Header = () => {
+export const Header = ({ color }) => {
   return (
-    <div className="header-container">
+    <header className="header-container" style={{ background: color ?? color }}>
       <div className="image-logo">
         <img src={Logo} alt="imagen en logo de la banda su presencia worship" />
       </div>
@@ -29,6 +29,6 @@ export const Header = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
