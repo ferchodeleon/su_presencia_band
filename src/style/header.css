@@ -20,8 +20,8 @@
 
 .header-container .header-menu ul li {
   text-align: center;
-  margin-right: 20px;
   padding: 10px 5px;
+  margin: 0 5px;
   position: relative;
 }
 
