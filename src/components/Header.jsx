@@ -37,36 +37,6 @@ export const Header = ({ color }) => {
               </a>
             </li>
           ))}
-          {/* <li>
-            <a className={`${isMenuOpen ? "appear" : ""}`} href="#inicio">
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a className={`${isMenuOpen ? "appear" : ""}`} href="#banda">
-              La banda
-            </a>
-          </li>
-          <li>
-            <a className={`${isMenuOpen ? "appear" : ""}`} href="#discografia">
-              Discografia
-            </a>
-          </li>
-          <li>
-            <a className={`${isMenuOpen ? "appear" : ""}`} href="#videos">
-              Videos
-            </a>
-          </li>
-          <li>
-            <a className={`${isMenuOpen ? "appear" : ""}`} href="#recursos">
-              Recursos
-            </a>
-          </li>
-          <li>
-            <a className={`${isMenuOpen ? "appear" : ""}`} href="#contact">
-              Contacto
-            </a>
-          </li> */}
         </ul>
       </div>
     </header>
