@@ -10,8 +10,13 @@
   max-width: 200px;
 }
 
-.header-container button {
+.burger {
   display: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 .header-container .header-menu ul {
@@ -70,7 +75,149 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .header-container button {
-    display: inline-block;
+
+  .header-container {
+    position: relative;
+    height: 100px;
   }
+
+  .image-logo {
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+
+  .image-logo.open {
+    z-index: 3;
+  }
+
+  .burger {
+    display: grid;
+    z-index: 4;
+    top: 0;
+    right: 30px;
+    display: grid;
+    place-items: center;
+    width: 88px;
+    height: 88px;
+    background: url("../assets/img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .burger.open {
+    background-image: url('../assets/img/close.svg');
+  }
+
+  .burger,
+  .header-menu {
+    position: fixed;
+  }
+
+  .header-background {
+    position: fixed;
+    z-index: 2;
+    top: 44px;
+    left: 44px;
+    aspect-ratio: 1 / 1;
+    translate: -20vh -165vh;
+    height: 88px;
+    background: #07030a;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+  .header-background.open {
+    height: 300vh;
+    opacity: 0.85;
+  }
+
+  .header-container .header-menu {
+    z-index: 3;
+    top: 120px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.05s;
+  }
+
+  .header-container .header-menu ul {
+    align-items: end;
+    justify-content: start;
+    width: 90%;
+  }
+
+  .header-menu a {
+    transition: 0.4s;
+  }
+
+  .header-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+  }
+
+  .header-menu.open {
+    right: 110px;
+    /* background-color: rgb(0, 0, 0); */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header-menu.open ul li a {
+    font-size: 1.5rem;
+  }
+
+  header .header-menu ul:hover li > a {
+    opacity: 0.25;
+  }
+
+  header .header-menu ul li > a:hover {
+    opacity: 1;
+  }
+
+  header .header-menu ul li > a {
+    animation-delay: 0.1s;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      translate: 0 30px;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .appear {
+    animation: appear 0.35s backwards;
+  }
+
+  .page {
+    padding: 100px 15%;
+    transition: 0.6s;
+  }
+
+  .page.open {
+    filter: blur(10px);
+  }
+
+  .page h2 {
+    font-weight: 400;
+  }
+
+  .page p {
+    line-height: 1.66;
+    opacity: 0.6;
+  }
+
 }
