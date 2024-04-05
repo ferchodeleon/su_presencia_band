@@ -18,7 +18,7 @@ export const Header = ({ color }) => {
   const isOpen = isMenuOpen ? "open" : "";
 
   return (
-    <header style={{ position: "fixed", width: "100%" }}>
+    <header style={{ position: "fixed", width: "100%", zIndex: 2 }}>
       <div className="header-container" style={{ background: color ?? color }}>
         <div className={`image-logo ${isOpen}`}>
           <img
