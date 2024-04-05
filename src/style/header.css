@@ -175,15 +175,15 @@
     font-size: 1.5rem;
   }
 
-  header .header-menu ul:hover li > a {
+  .header .header-menu ul:hover li > a {
     opacity: 0.25;
   }
 
-  header .header-menu ul li > a:hover {
+  .header .header-menu ul li > a:hover {
     opacity: 1;
   }
 
-  header .header-menu ul li > a {
+  .header .header-menu ul li > a {
     animation-delay: 0.1s;
   }
 
