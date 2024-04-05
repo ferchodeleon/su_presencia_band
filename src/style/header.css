@@ -100,13 +100,13 @@
     place-items: center;
     width: 88px;
     height: 88px;
-    background: url("../assets/img/menu.svg");
+    background: url("../assets/icons/menu.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .burger.open {
-    background-image: url('../assets/img/close.svg');
+    background-image: url('../assets/icons/close.svg');
   }
 
   .burger,
