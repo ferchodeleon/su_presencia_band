@@ -17,7 +17,7 @@
   height: 9rem;
   list-style-type: none;
   position: absolute;
-  top: 73%;
+  top: 78%;
   right: 0;
   transform: translateY(-50%);
   z-index: 1;
@@ -41,14 +41,14 @@
 
   &:nth-child(3) {left: 70%;}
   &:nth-child(4) { left: calc(70% + 140px); }
-  &:nth-child(5) { left: calc(70% + 440px); }
-  &:nth-child(6) { left: calc(70% + 660px); opacity: 0; }
+  &:nth-child(5) { left: calc(70% + 280px); }
+  &:nth-child(6) { left: calc(70% + 420px); }
 }
 
 .content {
   width: min(100vw, 600px);
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 8rem;
   transform: translateY(-50%);
   color: white;
@@ -175,5 +175,11 @@
     &:nth-child(4) {left: calc(50% + 140px);}
     &:nth-child(5) {left: calc(50% + 280px);}
     &:nth-child(6) {left: calc(50% + 420px); opacity: 0;}
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-container {
+    height: 60vh;
   }
 }
