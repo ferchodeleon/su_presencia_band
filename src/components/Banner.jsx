@@ -1,45 +1,10 @@
 import { useState } from "react";
 
-import firstImage from "../assets/img/tienes_el_control.jpg";
-import albumTienesControl from "../assets/img/album_tienes_el_control.jpg";
-import vegaTuReino from "../assets/img/venga_tu_reino.jpg";
-import pesadilla from "../assets/img/pesadilla.jpg";
-
 import "../style/banner.css";
 
-const data = [
-  {
-    title: "<span>Álbum tienes</span> el control",
-    description: "Tienes el control",
-    button: "Ver concierto",
-    link: "",
-    image: pesadilla,
-  },
-  {
-    title: "<span>Tienes el</span> control",
-    description: "Último lanzamiento",
-    button: "Ver video",
-    link: "",
-    image: firstImage,
-  },
-  {
-    title: "<span>Texto de</span> título",
-    description: "Descripción corta",
-    button: "Botón",
-    link: "",
-    image: albumTienesControl,
-  },
-  {
-    title: "<span>Álbum tienes</span> el control",
-    description: "Tienes el control",
-    button: "Ver concierto",
-    link: "",
-    image: vegaTuReino,
-  },
-];
-
-export const Banner = () => {
+export const Banner = ({ data }) => {
   const [, setCurrentIndex] = useState(0);
+  const [data1] = useState(data);
 
   const nextSlide = () => {
     const slider = document.querySelector(".banner-slider");
@@ -64,7 +29,7 @@ export const Banner = () => {
     <div className="banner-container">
       <div className="banner-main">
         <ul className="banner-slider">
-          {data.map((info, index) => (
+          {data1.map((info, index) => (
             <li
               key={index}
               className="banner-item"
