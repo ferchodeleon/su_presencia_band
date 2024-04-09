@@ -118,7 +118,7 @@
     position: fixed;
     z-index: 2;
     top: 44px;
-    left: 44px;
+    left: 0%;
     aspect-ratio: 1 / 1;
     translate: -20vh -165vh;
     height: 88px;
