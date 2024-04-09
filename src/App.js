@@ -6,6 +6,7 @@ import albumTienesControl from "./assets/img/album_tienes_el_control.jpg";
 import pesadilla from "./assets/img/pesadilla.jpg";
 import firstImage from "./assets/img/tienes_el_control.jpg";
 import vengaTuReino from "./assets/img/venga_tu_reino.jpg";
+import { PromotionBanner } from "./components/PromotionBanner";
 
 const data = [
   {
@@ -43,6 +44,7 @@ function App() {
     <div className="App">
       <Header />
       <Banner data={data} />
+      <PromotionBanner />
     </div>
   );
 }
