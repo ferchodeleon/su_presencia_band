@@ -1,4 +1,4 @@
-import "./style/main.css";
+import "./styles/main.css";
 import { Header } from "./components/Header";
 import { Banner } from "./components/Banner";
 
