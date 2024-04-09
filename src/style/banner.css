@@ -29,8 +29,8 @@
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
 
   &:nth-child(1), &:nth-child(2) {
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     transform: none;
@@ -49,7 +49,7 @@
   width: min(100vw, 600px);
   position: absolute;
   top: 80%;
-  left: 8rem;
+  left: 8%;
   transform: translateY(-50%);
   color: white;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
@@ -113,7 +113,7 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 1;
   user-select: none;
 
   & .btn {
@@ -143,43 +143,40 @@
   background-position: center;
 }
 
-@media (width > 650px) and (width < 900px) {
-  .content {
-    & .title { font-size: 1rem; }
-    & .description { font-size: 0.7rem; }
-    & button { font-size: 0.7rem; }
-  }
-
-  .banner-item {
-    width: 160px;
-    height: 270px;
-
-    &:nth-child(3) {left: 50%;}
-    &:nth-child(4) {left: calc(50% + 170px);}
-    &:nth-child(5) {left: calc(50% + 340px);}
-    &:nth-child(6) {left: calc(50% + 510px); opacity: 0;}
-  }
-}
-
-@media (width < 650px) {
-  .content {
-    & .title { font-size: 0.9rem;}
-    & .description { font-size: 0.65rem; }
-    & .button { font-size: 0.7rem; }
-  }
-  .item {
-    width: 130px;
-    height: 220px;
-
-    &:nth-child(3) {left: 50%;}
-    &:nth-child(4) {left: calc(50% + 140px);}
-    &:nth-child(5) {left: calc(50% + 280px);}
-    &:nth-child(6) {left: calc(50% + 420px); opacity: 0;}
-  }
-}
 
 @media screen and (max-width: 1200px) {
   .banner-container {
-    height: 60vh;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 899px) {
+
+  .content {
+    top: 60%;
+    & .title {
+      font-size: 1.5rem;
+    }
+
+    & .title span {
+      font-size: 1rem;
+    }
+
+    & .description {
+      font-size: 1rem;
+    }
+  }
+
+  .banner-item {
+    &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 0;
+      }
   }
 }
