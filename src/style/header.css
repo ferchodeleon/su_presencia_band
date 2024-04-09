@@ -100,13 +100,13 @@
     place-items: center;
     width: 88px;
     height: 88px;
-    background: url("../assets/img/menu.svg");
+    background: url("../assets/icons/menu.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .burger.open {
-    background-image: url('../assets/img/close.svg');
+    background-image: url('../assets/icons/close.svg');
   }
 
   .burger,
@@ -118,7 +118,7 @@
     position: fixed;
     z-index: 2;
     top: 44px;
-    left: 44px;
+    left: 0%;
     aspect-ratio: 1 / 1;
     translate: -20vh -165vh;
     height: 88px;
@@ -175,15 +175,15 @@
     font-size: 1.5rem;
   }
 
-  header .header-menu ul:hover li > a {
+  .header .header-menu ul:hover li > a {
     opacity: 0.25;
   }
 
-  header .header-menu ul li > a:hover {
+  .header .header-menu ul li > a:hover {
     opacity: 1;
   }
 
-  header .header-menu ul li > a {
+  .header .header-menu ul li > a {
     animation-delay: 0.1s;
   }
 
