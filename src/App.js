@@ -7,6 +7,7 @@ import pesadilla from "./assets/img/pesadilla.jpg";
 import firstImage from "./assets/img/tienes_el_control.jpg";
 import vengaTuReino from "./assets/img/venga_tu_reino.jpg";
 import { PromotionBanner } from "./components/PromotionBanner";
+import { Footer } from "./components/Footer";
 
 const data = [
   {
@@ -45,6 +46,7 @@ function App() {
       <Header />
       <Banner data={data} />
       <PromotionBanner />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.footer-container {
+  display: flex;
+  max-height: 150px;
+  align-items: end;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+.footer-container p {
+  color: #6A3926;
+}
+
+.footer-container .footer-music {
+  display: flex;
+}
+
+.footer-container .footer-music img {
+  padding: 0 2px;
+}

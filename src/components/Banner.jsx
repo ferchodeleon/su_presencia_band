@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "../style/banner.css";
+import "../styles/banner.css";
 
 export const Banner = ({ data }) => {
   const [, setCurrentIndex] = useState(0);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Logo from "../assets/logo/logo_white.svg";
-import "../style/header.css";
+import "../styles/header.css";
 
 const links = [
   "Inicio",
