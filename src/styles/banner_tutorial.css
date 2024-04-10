@@ -1,0 +1,81 @@
+.container-tutorial {
+  position: relative;
+  height: 60vh;
+  max-width: 80%;
+  margin: 0 auto;
+  background-attachment: auto;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tutorial-title {
+  color: var(--orange);
+  font-size: 1.5rem;
+  text-align: end;
+  margin-right: 19%;
+  text-transform: uppercase;
+}
+
+.swiper {
+  width: 240px;
+  height: 320px;
+  margin-right: 15%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  border-radius: 18px;
+}
+
+.swiper-slide p {
+  color: #FFF;
+  font-weight: bold;
+  padding: 10px 0 15px 20px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--orange);
+}
+
+.swiper-button-prev{
+  left: -5rem;
+}
+
+.swiper-button-next {
+  right: -5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--orange);
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -20px;
+}
+
+@media (max-width: 900px) {
+
+  .container-tutorial {
+    margin-bottom: 2rem;
+  }
+
+  .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+}
