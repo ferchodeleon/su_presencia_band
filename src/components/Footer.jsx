@@ -6,10 +6,14 @@ import "../styles/footer.css";
 
 export const Footer = () => {
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <img src={LogoBrown} alt="Logo de Su presencia worship en color café" />
-      <p>Invitaciones: invitaciones@supresencia.com</p>
-      <p>Contacto personal: abetancur@supresencia.com</p>
+      <p>
+        <span>Invitaciones:</span> invitaciones@supresencia.com
+      </p>
+      <p>
+        <span>Contacto personal:</span> abetancur@supresencia.com
+      </p>
       <div className="footer-music">
         <img
           className="footer-spotify"
@@ -27,6 +31,6 @@ export const Footer = () => {
           alt="Icono de apple music en color café"
         />
       </div>
-    </div>
+    </footer>
   );
 };
