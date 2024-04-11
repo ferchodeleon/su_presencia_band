@@ -20,7 +20,8 @@
   color: var(--orange);
   font-size: 1.5rem;
   text-align: end;
-  margin-right: 19%;
+  margin-right: 18%;
+  margin-bottom: 3%;
   text-transform: uppercase;
 }
 
@@ -40,13 +41,20 @@
 }
 
 .swiper-slide p {
+  width: 100%;
   color: #FFF;
   font-weight: bold;
   padding: 10px 0 15px 20px;
+  backdrop-filter: blur(5px);
 }
 
 .swiper-button-prev, .swiper-button-next {
   color: var(--orange);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.8rem;
 }
 
 .swiper-button-prev{
@@ -68,14 +76,40 @@
   bottom: -20px;
 }
 
+.swiper-container {
+  flex-direction: column;
+  align-items: end;
+}
+
 @media (max-width: 900px) {
 
   .container-tutorial {
     margin-bottom: 2rem;
+    background-size: cover;
   }
 
   .swiper-button-prev,
-    .swiper-button-next {
-      display: none;
-    }
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .tutorial-title {
+    margin: 0;
+  }
+
+  .swiper-cards {
+    align-self: start;
+  }
+}
+
+@media (max-width: 550px) {
+  .container-tutorial {
+    max-width: 100%;
+  }
 }
