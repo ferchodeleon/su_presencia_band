@@ -1,13 +1,13 @@
-import { Banner } from "../../components/Banner";
-import { BannerTutorial } from "../../components/BannerTutorial";
-import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
-import { PromotionBanner } from "../../components/PromotionBanner";
+import { Banner } from "../components/Banner";
+import { BannerTutorial } from "../components/BannerTutorial";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { PromotionBanner } from "../components/PromotionBanner";
 
-import albumTienesControl from "../../assets/img/album_tienes_el_control.webp";
-import pesadilla from "../../assets/img/pesadilla.webp";
-import firstImage from "../../assets/img/tienes_el_control.webp";
-import vengaTuReino from "../../assets/img/venga_tu_reino.webp";
+import albumTienesControl from "../assets/img/album_tienes_el_control.webp";
+import pesadilla from "../assets/img/pesadilla.webp";
+import firstImage from "../assets/img/tienes_el_control.webp";
+import vengaTuReino from "../assets/img/venga_tu_reino.webp";
 
 const dataMainBanner = [
   {
