@@ -34,7 +34,7 @@
   position: relative;
 }
 
-.header-container .header-menu ul li:nth-child(1) a {
+.header-container .header-menu ul li a.active {
   color: var(--orange);
   text-decoration: underline;
 }
@@ -45,6 +45,7 @@
   text-decoration: none;
   color: white;
 }
+
 
 .header-container .header-menu ul li::before {
   transform: scaleX(0);

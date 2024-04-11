@@ -4,7 +4,7 @@ import Logo from "../assets/logo/logo_white.svg";
 import "../styles/header.css";
 
 const links = [
-  "Inicio",
+  "inicio",
   "La banda",
   "Discografía",
   "Videos",
@@ -12,8 +12,9 @@ const links = [
   "Contacto",
 ];
 
-export const Header = ({ color }) => {
+export const Header = ({ color, menuSelect }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSelect] = useState(menuSelect);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const isOpen = isMenuOpen ? "open" : "";
 
@@ -35,9 +36,11 @@ export const Header = ({ color }) => {
         <div className={`header-menu ${isOpen}`}>
           <ul>
             {links.map((link, index) => (
-              <li>
+              <li key={index}>
                 <a
-                  className={`${isMenuOpen ? "appear" : ""}`}
+                  className={`${isMenuOpen ? "appear" : ""} ${
+                    isSelect === link ? "active" : ""
+                  }`}
                   style={{ animationDelay: `0.${index + 2}s` }}
                   href={`${link !== "La banda" ? link.toLowerCase() : "banda"}`}
                 >

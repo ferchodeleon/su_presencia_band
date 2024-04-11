@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Navigation, Pagination } from "swiper/modules";
 
-import backgroundJuan from "../assets/img/background_juan.png";
-import VengaTuReino from "../assets/tutorial/vive_en_mi.jpg";
-import TienesControl from "../assets/img/album_tienes_el_control.jpg";
-import Promotion from "../assets/img/background-promotion.jpg";
-import Juan from "../assets/img/venga_tu_reino.jpg";
-import Pesadilla from "../assets/img/pesadilla.jpg";
-import SoyPerdonado from "../assets/img/portada-soy-perdonado.jpg";
+import backgroundJuan from "../assets/img/background_juan.webp";
+import VengaTuReino from "../assets/img/tutorial/vive_en_mi.webp";
+import TienesControl from "../assets/img/album_tienes_el_control.webp";
+import Promotion from "../assets/img/background-promotion.webp";
+import Juan from "../assets/img/venga_tu_reino.webp";
+import Pesadilla from "../assets/img/pesadilla.webp";
+import SoyPerdonado from "../assets/img/portada-soy-perdonado.webp";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -73,11 +73,12 @@ export const BannerTutorial = () => {
             mousewheel={{ invert: false }}
           >
             {dataTutorial.map((info, index) => (
-              <>
-                <SwiperSlide style={{ backgroundImage: `url(${info.image})` }}>
-                  <p>{info.name}</p>
-                </SwiperSlide>
-              </>
+              <SwiperSlide
+                key={index}
+                style={{ backgroundImage: `url(${info.image})` }}
+              >
+                <p>{info.name}</p>
+              </SwiperSlide>
             ))}
           </Swiper>
         </div>
