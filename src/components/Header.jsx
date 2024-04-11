@@ -26,7 +26,11 @@ export const Header = ({ color }) => {
             alt="imagen en logo de la banda su presencia worship"
           />
         </div>
-        <button className={`burger ${isOpen}`} onClick={toggleMenu}></button>
+        <button
+          className={`burger ${isOpen}`}
+          aria-label="Botón para abrir y cerrar el menú"
+          onClick={toggleMenu}
+        ></button>
         <div className={`header-background ${isOpen}`}></div>
         <div className={`header-menu ${isOpen}`}>
           <ul>
