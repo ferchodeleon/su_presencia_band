@@ -47,8 +47,16 @@ export const Banner = ({ data }) => {
           ))}
         </ul>
         <nav className="nav">
-          <button className="btn prev" onClick={prevSlide}></button>
-          <button className="btn next" onClick={nextSlide}></button>
+          <button
+            className="btn prev"
+            aria-label="botón mostrar imagen anterior"
+            onClick={prevSlide}
+          ></button>
+          <button
+            className="btn next"
+            aria-label="botón mostrar imagen siguiente"
+            onClick={nextSlide}
+          ></button>
         </nav>
       </div>
     </div>
