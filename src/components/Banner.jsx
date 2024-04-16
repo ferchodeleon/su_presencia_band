@@ -10,10 +10,6 @@ export const Banner = ({ data }) => {
     const slider = document.querySelector(".banner-slider");
     const items = document.querySelectorAll(".banner-item");
 
-    const texto = "Album tienes el control de mi";
-    const textoModificado = texto.split(/(\s{1,})/g);
-    console.log(textoModificado);
-
     setCurrentIndex(
       () => slider.append(items[0]) // Agregar la siguiente imagen al contenedor del slider
     );

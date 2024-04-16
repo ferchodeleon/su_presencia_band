@@ -1,20 +1,12 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
+import { links } from "../assets/local_data";
 import Logo from "../assets/logo/logo_white.svg";
 import "../styles/header.css";
 
-const links = [
-  "inicio",
-  "La banda",
-  "Discografía",
-  "Videos",
-  "Recursos",
-  "Contacto",
-];
-
 export const Header = ({ color, menuSelect }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSelect] = useState(menuSelect);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const isOpen = isMenuOpen ? "open" : "";
 
@@ -34,21 +26,20 @@ export const Header = ({ color, menuSelect }) => {
         ></button>
         <div className={`header-background ${isOpen}`}></div>
         <div className={`header-menu ${isOpen}`}>
-          <ul>
-            {links.map((link, index) => (
-              <li key={index}>
-                <a
-                  className={`${isMenuOpen ? "appear" : ""} ${
-                    isSelect === link ? "active" : ""
-                  }`}
-                  style={{ animationDelay: `0.${index + 2}s` }}
-                  href={`${link !== "La banda" ? link.toLowerCase() : "banda"}`}
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <nav>
+            <ul>
+              {links.map((route, index) => (
+                <li key={index}>
+                  <NavLink
+                    to={route.to}
+                    style={{ animationDelay: `0.${index + 2}s` }}
+                  >
+                    {route.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </header>

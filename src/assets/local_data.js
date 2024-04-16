@@ -1,13 +1,9 @@
-import { Banner } from "../components/Banner";
-import { BannerTutorial } from "../components/BannerTutorial";
-import { PromotionBanner } from "../components/PromotionBanner";
-
 import albumTienesControl from "../assets/img/album_tienes_el_control.webp";
 import pesadilla from "../assets/img/pesadilla.webp";
 import firstImage from "../assets/img/tienes_el_control.webp";
 import vengaTuReino from "../assets/img/venga_tu_reino.webp";
 
-const dataMainBanner = [
+export const dataMainBanner = [
   {
     title: "<span>la</span> pesadilla",
     description: "Disponible en todas las plataformas",
@@ -38,12 +34,35 @@ const dataMainBanner = [
   },
 ];
 
-export const Home = () => {
-  return (
-    <>
-      <Banner data={dataMainBanner} />
-      <PromotionBanner />
-      <BannerTutorial />
-    </>
-  );
-};
+export const links = [
+  {
+    to: "/",
+    url: "Home",
+    name: "Inicio",
+  },
+  {
+    to: "/band",
+    url: "band",
+    name: "La banda",
+  },
+  {
+    to: "/discography",
+    url: "discography",
+    name: "Discografía",
+  },
+  {
+    to: "/videos",
+    url: "videos",
+    name: "Videos",
+  },
+  {
+    to: "/resourse",
+    url: "resourse",
+    name: "Recursos",
+  },
+  {
+    to: "/contact",
+    url: "contact",
+    name: "Contacto",
+  },
+];
