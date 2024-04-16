@@ -3,6 +3,9 @@ import pesadilla from "../assets/img/pesadilla.webp";
 import firstImage from "../assets/img/tienes_el_control.webp";
 import vengaTuReino from "../assets/img/venga_tu_reino.webp";
 
+import TienesControl from "../assets/img/discography/tienes_el_control.jpg";
+import VoyBuscando from "../assets/img/discography/voy_buscando.jpg";
+
 export const dataMainBanner = [
   {
     title: "<span>la</span> pesadilla",
@@ -66,3 +69,115 @@ export const links = [
     name: "Contacto",
   },
 ];
+
+export const discography = [];
+discography.push(
+  {
+    nameAlbum: "Tienes El Control",
+    year: "2023",
+    image: TienesControl,
+    songs: [
+      {
+        title: "Hay Fiesta",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Más De Ti",
+        artist: "Su Presencia, Alex Campos",
+      },
+      {
+        title: "Profundamente Te Amo",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Lo Tengo Todo En Ti",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Tienes El Control",
+        artist: "Su Presencia",
+      },
+    ],
+  },
+  {
+    nameAlbum: "Tienes El Control",
+    year: "2023",
+    image: TienesControl,
+    songs: [
+      {
+        title: "Hay Fiesta",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Más De Ti",
+        artist: "Su Presencia, Alex Campos",
+      },
+      {
+        title: "Profundamente Te Amo",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Lo Tengo Todo En Ti",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Tienes El Control",
+        artist: "Su Presencia",
+      },
+    ],
+  },
+  {
+    nameAlbum: "Tienes El Control",
+    year: "2023",
+    image: TienesControl,
+    songs: [
+      {
+        title: "Hay Fiesta",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Más De Ti",
+        artist: "Su Presencia, Alex Campos",
+      },
+      {
+        title: "Profundamente Te Amo",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Lo Tengo Todo En Ti",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Tienes El Control",
+        artist: "Su Presencia",
+      },
+    ],
+  },
+  {
+    nameAlbum: "Tienes El Control",
+    year: "2023",
+    image: TienesControl,
+    songs: [
+      {
+        title: "Hay Fiesta",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Más De Ti",
+        artist: "Su Presencia, Alex Campos",
+      },
+      {
+        title: "Profundamente Te Amo",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Lo Tengo Todo En Ti",
+        artist: "Su Presencia",
+      },
+      {
+        title: "Tienes El Control",
+        artist: "Su Presencia",
+      },
+    ],
+  }
+);
