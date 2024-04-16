@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "../style/banner.css";
+import "../styles/banner.css";
 
 export const Banner = ({ data }) => {
   const [, setCurrentIndex] = useState(0);
@@ -9,10 +9,6 @@ export const Banner = ({ data }) => {
   const nextSlide = () => {
     const slider = document.querySelector(".banner-slider");
     const items = document.querySelectorAll(".banner-item");
-
-    const texto = "Album tienes el control de mi";
-    const textoModificado = texto.split(/(\s{1,})/g);
-    console.log(textoModificado);
 
     setCurrentIndex(
       () => slider.append(items[0]) // Agregar la siguiente imagen al contenedor del slider
@@ -47,8 +43,16 @@ export const Banner = ({ data }) => {
           ))}
         </ul>
         <nav className="nav">
-          <button className="btn prev" onClick={prevSlide}></button>
-          <button className="btn next" onClick={nextSlide}></button>
+          <button
+            className="btn prev"
+            aria-label="botón mostrar imagen anterior"
+            onClick={prevSlide}
+          ></button>
+          <button
+            className="btn next"
+            aria-label="botón mostrar imagen siguiente"
+            onClick={nextSlide}
+          ></button>
         </nav>
       </div>
     </div>

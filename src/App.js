@@ -1,51 +1,31 @@
-import "./style/main.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Banda } from "./pages/Banda";
+import { Home } from "./pages/Home";
+
+import "./styles/main.css";
 import { Header } from "./components/Header";
-import { Banner } from "./components/Banner";
-
-import albumTienesControl from "./assets/img/album_tienes_el_control.jpg";
-import pesadilla from "./assets/img/pesadilla.jpg";
-import firstImage from "./assets/img/tienes_el_control.jpg";
-import vengaTuReino from "./assets/img/venga_tu_reino.jpg";
-import { PromotionBanner } from "./components/PromotionBanner";
-
-const data = [
-  {
-    title: "<span>la</span> pesadilla",
-    description: "Disponible en todas las plataformas",
-    button: "Ver video",
-    link: "",
-    image: pesadilla,
-  },
-  {
-    title: "<span>Tienes el</span> control",
-    description: "Concierto disponible en Youtube",
-    button: "Ver concierto",
-    link: "",
-    image: firstImage,
-  },
-  {
-    title: "<span>tienes el</span> Control",
-    description: "Nuevo álbum ya disponible",
-    button: "¡Escuchar ahora!",
-    link: "",
-    image: albumTienesControl,
-  },
-  {
-    title: "<span>Venga tu</span> reino",
-    description: "Disponible ya en youtube",
-    button: "Ver video",
-    link: "",
-    image: vengaTuReino,
-  },
-];
+import { Error404 } from "./pages/Error404";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Banner data={data} />
-      <PromotionBanner />
-    </div>
+    <>
+      <BrowserRouter>
+        <Header
+        // color={"rgba(6, 6, 6, 0.5)"}
+        />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/band" element={<Banda />} />
+          <Route path="/discography" element={<Home />} />
+          <Route path="/videos" element={<Home />} />
+          <Route path="/resourse" element={<Home />} />
+          <Route path="/contact" element={<Home />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

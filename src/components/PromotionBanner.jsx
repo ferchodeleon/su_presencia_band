@@ -1,7 +1,7 @@
-import background from "../assets/img/background-promotion.jpg";
-import soyPerdonado from "../assets/img/portada-soy-perdonado.jpg";
+import background from "../assets/img/background-promotion.webp";
+import soyPerdonado from "../assets/img/portada-soy-perdonado.webp";
 
-import "../style/promotion_banner.css";
+import "../styles/promotion_banner.css";
 
 export const PromotionBanner = () => {
   return (
