@@ -22,9 +22,9 @@ import VoyBuscando from "../assets/img/discography/voy_buscando.jpg";
 
 export const dataMainBanner = [
   {
-    title: "<span>la</span> pesadilla",
+    title: "<span>La</span> pesadilla",
     description: "Disponible en todas las plataformas",
-    button: "Ver video",
+    button: "Escuchar canción",
     link: "",
     image: pesadilla,
   },
@@ -32,11 +32,11 @@ export const dataMainBanner = [
     title: "<span>Tienes el</span> control",
     description: "Concierto disponible en Youtube",
     button: "Ver concierto",
-    link: "",
+    link: "https://youtu.be/B6I17E3fhxs?si=qMrr3Xu5QrP96D4u",
     image: firstImage,
   },
   {
-    title: "<span>tienes el</span> Control",
+    title: "<span>Tienes el</span> Control",
     description: "Nuevo álbum ya disponible",
     button: "¡Escuchar ahora!",
     link: "",
@@ -46,7 +46,7 @@ export const dataMainBanner = [
     title: "<span>Venga tu</span> reino",
     description: "Disponible ya en youtube",
     button: "Ver video",
-    link: "",
+    link: "https://youtu.be/RgZQiXujo-0?si=QWXPBGSf8IITcAOy",
     image: vengaTuReino,
   },
 ];
