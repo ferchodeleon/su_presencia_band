@@ -6,13 +6,14 @@ import "../styles/discography_page.css";
 export const DiscographyPage = () => {
   return (
     <div className="main-discography">
-      <h1>Discography</h1>
+      <h2>Discografía</h2>
       <div className="discography-page-container">
         {discography.map((album, index) => (
           <Discography
             key={index}
             discographyName={album.nameAlbum}
             year={album.year}
+            totalSongs={album.totalSongs}
             image={album.image}
             songs={album.songs}
           />
