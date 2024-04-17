@@ -37,7 +37,14 @@ export const Banner = ({ data }) => {
                   dangerouslySetInnerHTML={{ __html: info.title }}
                 ></p>
                 <p className="description">{info.description}</p>
-                <button onClick={nextSlide}>{info.button}</button>
+                <a
+                  aria-label="Botón dirige a otra página"
+                  href={info.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {info.button}
+                </a>
               </div>
             </li>
           ))}
