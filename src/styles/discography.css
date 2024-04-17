@@ -1,10 +1,4 @@
-#discography-container {
-  background-color: black;
-}
-
-#album-container .vinyl .tracklist li p {
-  color: #fff;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -13,7 +7,7 @@
   transition: all 0.5s ease;
 }
 
-*:before,
+/* *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
@@ -22,11 +16,11 @@
   content: "";
   transition: all 0.5s ease;
   background: inherit;
-}
+} */
 
 :root {
   --line-size: 4px;
-  --symbol-width: 100px;
+  --symbol-width: 90px;
   --symbol-height: calc(var(--symbol-width) * 2);
   --background-1: #daa8cd;
   --background-2: #daa8cc;
@@ -43,112 +37,103 @@
 }
 
 .discography-title {
-  color: #FFF;
-  letter-spacing: 0.2rem;
+  color: #fff;
 }
 
-.discography-title p:nth-child(2) {
-  font-size: 0.8rem;
-}
-
-#album-container {
-  width: 100%;
-  display: flex;
+#container {
   position: relative;
-  flex-direction: row;
-  align-items: center;
   cursor: pointer;
 }
 
-#album-container:hover,
-#album-container:hover #album {
+#container:hover,
+#container:hover #album {
   margin-left: var(--shift);
 }
 
-#album-container:hover .vinyl {
+#container:hover #vinyl {
   margin-right: var(--shift);
 }
 
-#album-container:hover .tracklist {
-  margin-left: 40%;
+#container:hover #tracklist {
+  margin-left: calc(calc(100% + var(--shift)) + calc(var(--line-size) * 8));
 }
 
-.vinyl {
+#vinyl {
   position: absolute;
-  width: calc(var(--symbol-height) * 1.1);
-  height: calc(var(--symbol-height) * 1.1);
+  width: calc(var(--symbol-height) * 1.45);
+  height: calc(var(--symbol-height) * 1.45);
   border-radius: 50%;
   background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.55);
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
 }
 
-.vinyl:before {
+#vinyl:before {
   width: 30%;
   height: 30%;
   border-radius: 50%;
   mix-blend-mode: multiply;
-  background-color: #5f5f5f;
 }
 
-.vinyl:after {
+#vinyl:after {
   width: 3%;
   height: 3%;
-  background: #fff;
+  background: #000;
   border-radius: 50%;
 }
 
-.tracklist {
+#tracklist {
   height: calc(var(--symbol-height) - calc(var(--symbol-width) / 5));
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  counter-reset: item;
   white-space: nowrap;
-  transform-origin: center center;
   position: absolute;
-  left: 10px;
+  left: 0;
 }
 
-.tracklist li {
-  margin-left: calc(var(--line-size) * 10);
-  color: #FFF;
-  transform-origin: center right;
-  letter-spacing: calc(var(--line-size) * 0.5);
+#tracklist li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
 }
 
-.tracklist-title {
-  letter-spacing: 0.1rem;
-  font-size: 0.8rem;
+#tracklist li {
+  font-size: calc(var(--line-size) * 3);
+  margin-left: calc(var(--line-size) * 6);
+  color: var(--neon-color);
+  letter-spacing: calc(var(--line-size) * 1);
 }
 
-.tracklist-artist {
-  padding-left: 10px;
-  letter-spacing: 0.1rem;
-  font-size: 0.7rem;
+#tracklist li:before {
+  width: calc(var(--line-size) * 8);
+  text-align: center;
+  display: inline-block;
+  font-weight: 400;
+  margin-left: calc(var(--line-size) * -5);
+  transform-origin: bottom right;
 }
 
 #album {
-  width: 10px;
-  width: calc(var(--symbol-height) * 1.2);
-  height: calc(var(--symbol-height) * 1.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: calc(var(--symbol-height) * 1.5);
+  height: calc(var(--symbol-height) * 1.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--gradient);
-  z-index: 100;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
   position: relative;
-  background-size: cover;
 }
 
-#title {
-  width: calc(var(--symbol-height) * 1.2);
-  height: var(--symbol-width);
-  position: absolute;
-  opacity: 0.9;
+.tracklist-title {
+  font-size: 1rem;
+}
+
+.tracklist-artist {
+  font-size: 0.8rem;
 }
 
 #title>div {
@@ -157,13 +142,13 @@
   margin: calc(var(--line-size) * 2) 0;
 }
 
-#title #artist {
+#title .tracklist-artist {
   display: flex;
   flex-direction: row;
   margin-top: calc(var(--line-size) * 4);
 }
 
-#title #artist h1 {
+#title .tracklist-artist h1 {
   color: #fff;
 }
 
@@ -303,7 +288,7 @@
   transition-delay: 0.25s;
 }
 
-#album-container:hover #symbol .line p {
+#container:hover #symbol .line p {
   opacity: 0;
   transition: all 0.15s;
 }
@@ -313,9 +298,9 @@
   box-shadow: var(--neon-shadow);
 }
 
-#album-container:hover #symbol>.line:last-of-type,
+#container:hover #symbol>.line:last-of-type,
 #symbol>.line:first-of-type,
-#album-container:hover #symbol>.line:nth-of-type(2) {
+#container:hover #symbol>.line:nth-of-type(2) {
   top: 0;
   height: calc(var(--symbol-height) - calc(var(--symbol-width) / 5));
 }
@@ -356,9 +341,9 @@
 /* ANGLED */
 
 #symbol>.line:first-of-type:after,
-#album-container:hover #symbol>.line:last-of-type:after,
+#container:hover #symbol>.line:last-of-type:after,
 #symbol>.line:nth-of-type(4):before,
-#album-container:hover #symbol>.line:nth-of-type(3):before {
+#container:hover #symbol>.line:nth-of-type(3):before {
   width: calc(calc(var(--symbol-width) / 5) * 1.4);
   height: var(--line-size);
   bottom: 0;
@@ -370,15 +355,15 @@
   transform: rotate(45deg);
 }
 
-#album-container:hover #symbol>.line:last-of-type:after,
-#album-container:hover #symbol>.line:nth-of-type(3):before {
+#container:hover #symbol>.line:last-of-type:after,
+#container:hover #symbol>.line:nth-of-type(3):before {
   transform-origin: bottom right;
   transform: rotate(-45deg);
   right: 0;
 }
 
-#album-container:hover #symbol>.line:nth-of-type(4):before,
-#album-container:hover #symbol>.line:nth-of-type(4):after,
+#container:hover #symbol>.line:nth-of-type(4):before,
+#container:hover #symbol>.line:nth-of-type(4):after,
 #symbol>.line:nth-of-type(3):after,
 #symbol>.line:nth-of-type(3):before {
   width: 0;
@@ -386,14 +371,14 @@
   bottom: 0;
 }
 
-#album-container:hover #symbol>.line:nth-of-type(3):after,
+#container:hover #symbol>.line:nth-of-type(3):after,
 #symbol>.line:nth-of-type(4):after {
   width: calc(var(--symbol-width) / 5);
   height: var(--line-size);
   bottom: 0;
 }
 
-#album-container:hover #symbol>.line:nth-of-type(3):after {
+#container:hover #symbol>.line:nth-of-type(3):after {
   transform-origin: bottom left;
   left: 0;
 }
@@ -403,40 +388,40 @@
   transform-origin: bottom right;
 }
 
-#album-container:hover #symbol {
+#container:hover #symbol {
   transform: skewY(18deg);
 }
 
 #symbol>.line:nth-of-type(3),
 #symbol>.line:nth-of-type(5),
-#album-container:hover #symbol>.line:nth-of-type(4) {
+#container:hover #symbol>.line:nth-of-type(4) {
   height: calc(var(--symbol-height) - calc(var(--symbol-width) / 5));
 }
 
 #symbol>.line:nth-of-type(4),
-#album-container:hover #symbol>.line:nth-of-type(3) {
+#container:hover #symbol>.line:nth-of-type(3) {
   height: calc(var(--symbol-height) - calc(calc(var(--symbol-width) / 5)) * 2);
 }
 
-#album-container:hover #symbol>.line:nth-of-type(5),
-#album-container:hover #symbol>.line:first-of-type {
+#container:hover #symbol>.line:nth-of-type(5),
+#container:hover #symbol>.line:first-of-type {
   height: var(--symbol-height);
 }
 
 #symbol>.line:nth-of-type(2):after,
-#album-container:hover #symbol>.line:nth-of-type(5):after {
+#container:hover #symbol>.line:nth-of-type(5):after {
   height: var(--line-size);
   width: calc(calc(var(--symbol-width) / 5) * 4);
   bottom: 0;
 }
 
-#album-container:hover #symbol>.line:nth-of-type(5):after,
+#container:hover #symbol>.line:nth-of-type(5):after,
 #symbol>.line:nth-of-type(5):after {
   right: 0;
 }
 
 #symbol>.line:nth-of-type(5):after,
-#album-container:hover #symbol>.line:nth-of-type(2):after {
+#container:hover #symbol>.line:nth-of-type(2):after {
   height: var(--line-size);
   width: calc(calc(var(--symbol-width) / 5) * 2);
   bottom: 0;
@@ -467,12 +452,12 @@
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 
-#album-container:hover #symbol .line .shadow {
+#container:hover #symbol .line .shadow {
   transition: opacity 0.25s ease 0.5s;
 }
 
-#album-container:hover #symbol .line .shadow:before,
-#album-container:hover #symbol .line .shadow:after,
+#container:hover #symbol .line .shadow:before,
+#container:hover #symbol .line .shadow:after,
 #symbol .line:nth-of-type(4) .shadow:after,
 #symbol .line:first-of-type .shadow:after {
   transition: opacity 0.5s ease 0.5s;
@@ -480,8 +465,8 @@
 
 #symbol .line .shadow:before,
 #symbol .line .shadow:after,
-#album-container:hover #symbol .line:nth-of-type(4) .shadow:after,
-#album-container:hover #symbol .line:first-of-type .shadow:after {
+#container:hover #symbol .line:nth-of-type(4) .shadow:after,
+#container:hover #symbol .line:first-of-type .shadow:after {
   width: inherit;
   height: 50%;
   transition: opacity 0.25s ease;
@@ -510,8 +495,8 @@
   height: calc(var(--symbol-height) - calc(var(--line-size) * 1.5));
 }
 
-#album-container:hover #symbol .line:nth-of-type(2) .shadow:after,
-#album-container:hover #symbol .line:nth-of-type(5) .shadow:after {
+#container:hover #symbol .line:nth-of-type(2) .shadow:after,
+#container:hover #symbol .line:nth-of-type(5) .shadow:after {
   opacity: 1;
 }
 
@@ -523,10 +508,10 @@
 #symbol .line:nth-of-type(4) .shadow:before,
 #symbol .line:nth-of-type(2) .shadow:before,
 #symbol .line:nth-of-type(2) .shadow:after,
-#album-container:hover #symbol .line:first-of-type .shadow:after,
+#container:hover #symbol .line:first-of-type .shadow:after,
 #symbol .line:nth-of-type(5) .shadow:after,
-#album-container:hover #symbol .line:nth-of-type(4) .shadow:after,
-#album-container:hover #symbol .line:first-of-type .shadow:after {
+#container:hover #symbol .line:nth-of-type(4) .shadow:after,
+#container:hover #symbol .line:first-of-type .shadow:after {
   opacity: 0;
 }
 
@@ -553,4 +538,14 @@ h2#cta a::after {
 
 h2#cta a:hover::after {
   transform: translateX(3px);
+}
+
+.discography-title p:nth-child(1) {
+  max-width: 200px;
+  letter-spacing: 3px;
+}
+
+.discography-title p:nth-child(2) {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
