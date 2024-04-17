@@ -6,6 +6,7 @@ import "./styles/main.css";
 import { Header } from "./components/Header";
 import { Error404 } from "./pages/Error404";
 import { Footer } from "./components/Footer";
+import { DiscographyPage } from "./pages/DiscographyPage";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/band" element={<Banda />} />
-          <Route path="/discography" element={<Home />} />
+          <Route path="/discography" element={<DiscographyPage />} />
           <Route path="/videos" element={<Home />} />
           <Route path="/resourse" element={<Home />} />
           <Route path="/contact" element={<Home />} />
