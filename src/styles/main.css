@@ -13,3 +13,21 @@
   margin: 0;
   padding: 0;
 }
+
+/* Cambios del scroll */
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #dc815d73;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #dc815de0;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}

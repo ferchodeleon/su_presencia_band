@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Banda } from "./pages/Banda";
-import { Home } from "./pages/Home";
 
 import "./styles/main.css";
+import { Home } from "./pages/Home";
 import { Header } from "./components/Header";
 import { Error404 } from "./pages/Error404";
 import { Footer } from "./components/Footer";

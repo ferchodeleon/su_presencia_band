@@ -14,10 +14,12 @@ export const Header = ({ color, menuSelect }) => {
     <header style={{ position: "fixed", width: "100%", zIndex: 2 }}>
       <div className="header-container" style={{ background: color ?? color }}>
         <div className={`image-logo ${isOpen}`}>
-          <img
-            src={Logo}
-            alt="imagen en logo de la banda su presencia worship"
-          />
+          <NavLink to="/">
+            <img
+              src={Logo}
+              alt="imagen en logo de la banda su presencia worship"
+            />
+          </NavLink>
         </div>
         <button
           className={`burger ${isOpen}`}
@@ -33,6 +35,7 @@ export const Header = ({ color, menuSelect }) => {
                   <NavLink
                     to={route.to}
                     style={{ animationDelay: `0.${index + 2}s` }}
+                    reloadDocument={true}
                   >
                     {route.name}
                   </NavLink>
