@@ -19,6 +19,16 @@ import ElAlbum from "../assets/img/discography/el.jpg";
 import JesusFreak from "../assets/img/discography/jesus_freak.jpg";
 import CielosAbiertos from "../assets/img/discography/cielos_abiertos_en_vivo.jpg";
 import VoyBuscando from "../assets/img/discography/voy_buscando.jpg";
+import Piano1 from "../assets/img/tutorial/piano1.jpg";
+import Piano2 from "../assets/img/tutorial/piano2.jpg";
+import Piano3 from "../assets/img/tutorial/piano3.jpg";
+import Bateria1 from "../assets/img/tutorial/bateria1.jpg";
+import Bateria2 from "../assets/img/tutorial/bateria2.jpg";
+import Bajo3 from "../assets/img/tutorial/bajo3.jpg";
+import Guitarra1 from "../assets/img/tutorial/guitarra1.jpg";
+import GuitarraGuitarra1 from "../assets/img/tutorial/guitarra_electrica1.jpg";
+import GuitarraGuitarra2 from "../assets/img/tutorial/guitarra_electrica2.jpg";
+import GuitarraGuitarra3 from "../assets/img/tutorial/guitarra_electrica3.jpg";
 
 export const dataMainBanner = [
   {
@@ -535,3 +545,55 @@ discography.push(
     ],
   }
 );
+
+export const dataTutorial = [
+  {
+    image: Piano1,
+    name: "Tutorial Piano",
+    subname: "Tienes El Control",
+    alt: "Imagen de un piano",
+    link: "https://youtu.be/GfpgOBkwgmg?si=NoBz1OMb0EehuwNo",
+  },
+  {
+    image: Bateria1,
+    name: "Tutorial Batería",
+    subname: "Venga Tu Reino",
+    alt: "Imagen de una batería musical",
+    link: "https://youtu.be/JdcDCihCn1o?si=yCFBA_sd5IO3zyBw",
+  },
+  {
+    image: Piano2,
+    name: "Tutorial Piano",
+    subname: "Venga Tu Reino",
+    alt: "Imagen de un piano",
+    link: "https://youtu.be/qo75DJzLEj0?si=iYu3lrujVI08HRHW",
+  },
+  {
+    image: Guitarra1,
+    name: "Tutorial Guitarra acustica",
+    subname: "Te Veré",
+    alt: "Imagen de una Guitarra acustica",
+    link: "https://youtu.be/5Cj7ICd8rCY?si=YvUopUPe-IdQLZG1",
+  },
+  {
+    image: Bajo3,
+    name: "Tutorial Bajo",
+    subname: "Digno Eres Tú",
+    alt: "Imagen de un bajo, instrumento musical",
+    link: "https://youtu.be/Yb71fr_uPzE?si=6tueNr7ZxXVlpRH9",
+  },
+  {
+    image: Piano3,
+    name: "Tutorial Piano",
+    subname: "Te Veré",
+    alt: "Imagen de un piano",
+    link: "https://youtu.be/fp122Tq3fkk?si=C3p-KvoGtaTbpXkc",
+  },
+  {
+    image: Bateria2,
+    name: "Tutorial Batería",
+    subname: "Pienso En Tí",
+    alt: "Imagen de una batería instrumento musical",
+    link: "https://youtu.be/dSM9N4VEqRA?si=E3WmFk7eva4NTRWP",
+  },
+];
