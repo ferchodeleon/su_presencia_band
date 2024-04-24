@@ -34,6 +34,7 @@ export const Header = ({ color, menuSelect }) => {
                 <li key={index}>
                   <NavLink
                     to={route.to}
+                    target={route.target ? "_blank" : ""}
                     style={{ animationDelay: `0.${index + 2}s` }}
                     reloadDocument={true}
                   >
