@@ -78,20 +78,22 @@ export const links = [
     name: "Discografía",
   },
   {
-    to: "/videos",
+    to: "https://youtu.be/dSM9N4VEqRA?si=AUvu1Grjt4xWIwL9",
+    target: true,
     url: "videos",
     name: "Videos",
   },
   {
-    to: "/resourse",
+    to: "https://www.youtube.com/watch?v=GfpgOBkwgmg&list=PLt7-BTVbUMJmX3Ol-4eNbWcLGdVea7CYc&ab_channel=SuPresenciaWorship",
+    target: true,
     url: "resourse",
     name: "Recursos",
   },
-  {
-    to: "/contact",
-    url: "contact",
-    name: "Contacto",
-  },
+  // {
+  //   to: "/contact",
+  //   url: "contact",
+  //   name: "Contacto",
+  // },
 ];
 
 export const discography = [];
