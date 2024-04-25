@@ -26,9 +26,17 @@ import Bateria1 from "../assets/img/tutorial/bateria1.jpg";
 import Bateria2 from "../assets/img/tutorial/bateria2.jpg";
 import Bajo3 from "../assets/img/tutorial/bajo3.jpg";
 import Guitarra1 from "../assets/img/tutorial/guitarra1.jpg";
-import GuitarraGuitarra1 from "../assets/img/tutorial/guitarra_electrica1.jpg";
-import GuitarraGuitarra2 from "../assets/img/tutorial/guitarra_electrica2.jpg";
-import GuitarraGuitarra3 from "../assets/img/tutorial/guitarra_electrica3.jpg";
+import backgroundHistory from "../assets/img/banda/background-history-1.jpg";
+import JuanMunoz from "../assets/img/banda/juan_munoz.jpg";
+import backgroundJuanMunoz from "../assets/img/banda/background_Juan_Muñoz.jpg";
+import HenryGonzalez from "../assets/img/banda/henry_gonzalez.jpg";
+import BackgroundHenry from "../assets/img/banda/background-henry.jpg";
+import TutiVega from "../assets/img/banda/tuti_vega.jpg";
+import BackgroundTuti from "../assets/img/banda/background-tuti.jpg";
+import GermanMarino from "../assets/img/banda/german_marino.jpg";
+import BackgroundGerman from "../assets/img/banda/background-german.jpg";
+import DanielaReyes from "../assets/img/banda/daniela_reyes.jpg";
+import BackgroundDaniela from "../assets/img/banda/background-daniela.jpg";
 
 export const dataMainBanner = [
   {
@@ -94,6 +102,147 @@ export const links = [
   //   url: "contact",
   //   name: "Contacto",
   // },
+];
+
+export const dataBand = [
+  {
+    background: backgroundHistory,
+    text: `Somos el equipo de alabanza de la iglesia Su Presencia, en Bogotá,
+            Colombia.
+            <br />
+            <br />
+            Hacemos música para Dios con fusiones de ritmos latinos, pop y rock.
+            <br />
+            <br />
+            Nuestra historia: Tienes el control (2023), Jesús (2021)
+            <br />
+            Fragmentos del cielo (2018), Vive en mí (2015)
+            <br />
+            Himnos (2014), Fiel (2013), Él (2011), Jesus Freak (2009)
+            <br />
+            Cielos abiertos (2007) y Voy buscando (2006)
+            <br />
+            <br />
+            Nuestros pastores: Andrés y Rocío Corson
+            <br />
+            <br />
+            Nuestro líder: Juan David Muñoz
+            <br />
+            <br />
+            CREEMOS QUE NUESTRA MÚSICA SANARÁ LA TIERRA`,
+    title: "<span>¿Quiénes</span> Somos?",
+    textLeft: false,
+  },
+  {
+    background: backgroundJuanMunoz,
+    ArtistImage: JuanMunoz,
+    text: ` <span>«Llévame, Señor, pegaíto entre tus brazos...».</span>
+            <br/>
+            Líder de alabanza.
+            <br />
+            <br />
+            Voz, guitarrista, compositor, arreglista y productor.
+            <br />
+            <br />
+            Esposo de Paola y papá de Ester.
+            <br />
+            Cumple años el 25 de abril.
+            <br />
+            Es parte de la banda desde el año 2007.
+            <br />
+            Ama las guitarras vintage y odia los audios de WhatsApp.
+            <br />
+            <br />
+            <span>@juan_munoz_</span>`,
+    title: "<span>Juan</span> Muñoz",
+    textLeft: true,
+  },
+  {
+    background: BackgroundHenry,
+    ArtistImage: HenryGonzalez,
+    text: ` <span>«Te anhelo, te deseo, ven camina junto a mí, tú me puedes entender».</span>
+            <br/>
+            Voz principal y compositor.
+            <br />
+            <br />
+            Esposo de Tuti y papá de Benjamín.
+            <br />
+            Cumple años el 4 de abril.
+            <br />
+            Es parte de la banda desde el año 2007.
+            <br />
+            Ama cocinar para las personas que ama y odia el desorden.
+            <br />
+            <br />
+            <span>@henryxgonzalez</span>`,
+    title: "<span>Henry</span> González",
+    textLeft: false,
+  },
+  {
+    background: BackgroundTuti,
+    ArtistImage: TutiVega,
+    text: ` <span>«Y verte a ti, y verme en ti, y recibir tu gracia y paz».</span>
+            <br/>
+            Voz principal, compositora y productora.
+            <br />
+            <br />
+            Su nombre es Maria Laura
+            <br />
+            Esposo de Henry y mamá de Benjamín.
+            <br />
+            Cumple años el 19 de diciembre.
+            <br />
+            Es parte de la banda desde el año 2009.
+            <br />
+            Ama los tulipanes y odia madrugar.
+            <br />
+            <br />
+            <span>@tutivega</span>`,
+    title: "<span>TUTI</span> VEGA",
+    textLeft: true,
+  },
+  {
+    background: BackgroundGerman,
+    ArtistImage: GermanMarino,
+    text: ` <span>«Cristo vive en mí, mi esperanza de gloria».</span>
+            <br/>
+            Voz principal, productor, compositor y arreglista.
+            <br />
+            <br />
+            Esposo de Laura.
+            <br />
+            Cumple años el 19 de agosto.
+            <br />
+            Es parte de la banda desde el año  2013.
+            <br />
+            Ama el café de especialidad y odia las telenovelas.
+            <br />
+            <br />
+            <span>@germanino_</span>`,
+    title: "<span>GERMÁN</span> MARIÑO",
+    textLeft: false,
+  },
+  {
+    background: BackgroundDaniela,
+    ArtistImage: DanielaReyes,
+    text: ` <span>«Vivo y respiro a Dios, nada temeré».</span>
+            <br/>
+            Voz principal y compositora.
+            <br />
+            <br />
+            Esposa de Andrés.
+            <br />
+            Cumple años el 22 de agosto.
+            <br />
+            Es parte de la banda desde el 2013.
+            <br />
+            Ama hacer postres y odia los roedores.
+            <br />
+            <br />
+            <span>@daniela_reyes_</span>`,
+    title: "<span>DANIELA</span> REYES",
+    textLeft: true,
+  },
 ];
 
 export const discography = [];
