@@ -541,3 +541,19 @@ h2#cta a:hover::after {
   font-size: 0.8rem;
   letter-spacing: 2px;
 }
+
+@media (max-width: 700px) {
+  :root {
+    --symbol-width: 80px;
+    --symbol-height: calc(var(--symbol-width) * 1.7);
+  }
+
+  #tracklist {
+    width: calc(var(--symbol-height) + calc(var(--symbol-width) / 5));
+  }
+
+  .tracklist-title, .tracklist-artist {
+    font-size: 8px;
+  }
+
+}
