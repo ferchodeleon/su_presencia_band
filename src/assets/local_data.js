@@ -76,7 +76,7 @@ export const links = [
     name: "Inicio",
   },
   {
-    to: "/su_presencia_band/band",
+    to: "/band",
     url: "band",
     name: "La banda",
   },
