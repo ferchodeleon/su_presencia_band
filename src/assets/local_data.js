@@ -76,7 +76,7 @@ export const links = [
     name: "Inicio",
   },
   {
-    to: "/band",
+    to: "/su_presencia_band/band",
     url: "band",
     name: "La banda",
   },
@@ -86,7 +86,7 @@ export const links = [
     name: "Discografía",
   },
   {
-    to: "https://youtu.be/dSM9N4VEqRA?si=AUvu1Grjt4xWIwL9",
+    to: "https://www.youtube.com/@SuPresenciaWorship/videos",
     target: true,
     url: "videos",
     name: "Videos",
