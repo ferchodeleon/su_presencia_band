@@ -1,12 +1,38 @@
 .main-discography {
-  padding-top: 10%;
+  padding: 10% 0;
   background-color: #000;
+}
+
+.main-discography h2 {
+  color: #fff;
+  max-width: 50%;
+  font-size: 3rem;
+  margin: 2rem auto;
 }
 
 .discography-page-container {
   display: grid;
+  align-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-items: center;
   align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+
+  .main-discography h2 {
+    font-size: 2rem;
+    margin-top: 10vh;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .discography-page-container {
+    grid-template-columns: 1fr;
+  }
 }

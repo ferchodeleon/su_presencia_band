@@ -75,7 +75,8 @@
     margin: 10px auto;
   }
 
-  & button {
+  & a {
+    display: block;
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
@@ -85,7 +86,7 @@
     cursor: pointer;
   }
 
-  & button:hover {
+  & a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     background-position: 50%;
     color: var(--orange);
