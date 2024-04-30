@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/su_presencia_band/static/css/main.5acc9cf6.css",
-    "main.js": "/su_presencia_band/static/js/main.9645cebc.js",
+    "main.js": "/su_presencia_band/static/js/main.4933b0f2.js",
     "static/js/453.f1896a4b.chunk.js": "/su_presencia_band/static/js/453.f1896a4b.chunk.js",
     "static/media/background_Juan_Muñoz.jpg": "/su_presencia_band/static/media/background_Juan_Muñoz.bb74e856587f5febf586.jpg",
     "static/media/background-german.jpg": "/su_presencia_band/static/media/background-german.1d8f602a192afe5e873e.jpg",
@@ -57,11 +57,11 @@
     "static/media/close.svg": "/su_presencia_band/static/media/close.272f49a7bc30d6dccb5c.svg",
     "static/media/menu.svg": "/su_presencia_band/static/media/menu.22009b4b9a1d04bdfe41.svg",
     "main.5acc9cf6.css.map": "/su_presencia_band/static/css/main.5acc9cf6.css.map",
-    "main.9645cebc.js.map": "/su_presencia_band/static/js/main.9645cebc.js.map",
+    "main.4933b0f2.js.map": "/su_presencia_band/static/js/main.4933b0f2.js.map",
     "453.f1896a4b.chunk.js.map": "/su_presencia_band/static/js/453.f1896a4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5acc9cf6.css",
-    "static/js/main.9645cebc.js"
+    "static/js/main.4933b0f2.js"
   ]
 }
