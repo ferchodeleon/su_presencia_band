@@ -8,6 +8,7 @@ import "../styles/header.css";
 export const Header = ({ color, menuSelect }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const onCloseMenu = () => setIsMenuOpen(false);
   const isOpen = isMenuOpen ? "open" : "";
 
   return (
@@ -36,7 +37,7 @@ export const Header = ({ color, menuSelect }) => {
                     to={route.to}
                     target={route.target ? "_blank" : ""}
                     style={{ animationDelay: `0.${index + 2}s` }}
-                    reloadDocument={true}
+                    onClick={onCloseMenu}
                   >
                     {route.name}
                   </NavLink>
