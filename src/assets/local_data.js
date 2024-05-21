@@ -97,6 +97,12 @@ export const links = [
     url: "resourse",
     name: "Recursos",
   },
+  {
+    to: "https://www.nxtwave.band",
+    target: true,
+    url: "nxtwave",
+    name: "Nxtwave",
+  },
 ];
 
 export const dataBand = [
