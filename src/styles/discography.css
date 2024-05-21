@@ -556,4 +556,8 @@ h2#cta a:hover::after {
     font-size: 8px;
   }
 
+  #container:hover #tracklist {
+    margin-left: calc(calc(100% + var(--shift)) + calc(var(--line-size) * 4));
+  }
+
 }
