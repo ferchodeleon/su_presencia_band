@@ -97,11 +97,6 @@ export const links = [
     url: "resourse",
     name: "Recursos",
   },
-  // {
-  //   to: "/contact",
-  //   url: "contact",
-  //   name: "Contacto",
-  // },
 ];
 
 export const dataBand = [
@@ -186,9 +181,9 @@ export const dataBand = [
             Voz principal, compositora y productora.
             <br />
             <br />
-            Su nombre es Maria Laura
+            Su nombre es Maria Laura,
             <br />
-            Esposo de Henry y mamá de Benjamín.
+            Esposa de Henry y mamá de Benjamín.
             <br />
             Cumple años el 19 de diciembre.
             <br />
