@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import "../styles/discography.css";
 
 export const Discography = ({
+  id,
   discographyName,
   year,
   totalSongs,
@@ -9,7 +11,7 @@ export const Discography = ({
 }) => {
   return (
     <>
-      <a target="__blank" href="https://www.google.com">
+      <Link to={`/discography/${id}`}>
         <div id="container">
           <div id="vinyl">
             <ol id="tracklist">
@@ -30,7 +32,7 @@ export const Discography = ({
             </p>
           </div>
         </div>
-      </a>
+      </Link>
     </>
   );
 };
