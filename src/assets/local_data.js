@@ -246,9 +246,203 @@ export const dataBand = [
   },
 ];
 
+export const discographyPdf = [
+  {
+    id: 1,
+    nameAlbum: "Tienes El Control",
+    year: "2023",
+    totalSongs: "14",
+    image: TienesControl,
+    urlMultitrack: "https://bfan.link/Tienes-El-Control1",
+    songs: [
+      {
+        title: "Hay fiesta",
+        tono: "Tono: A",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 128 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/M4rvX7S3LEE?si=Tc94y2P0oqiRiCOR",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/1-hay-fiesta.pdf",
+      },
+      {
+        title: "Más de ti",
+        tono: "Tono: A",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 90 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/XwrW2QDvzJU?si=IL_o7L0TOhinCg8E",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/2-mas-de-ti.pdf",
+      },
+      {
+        title: "Profundamente te amo",
+        tono: "Tono: E",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 70 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/dNfM7SGRNpA?si=3gLWEOD5awqtoag8",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/3-profundamente-te-amo.pdf",
+      },
+      {
+        title: "Lo tengo todo en ti",
+        tono: "Tono: D",
+        compas: "Compas: 6/8",
+        tempo: "Tempo: 156 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/HqXsbZeaXYg?si=sFoTGuaXveyHzGq3",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/4-lo-tengo-todo-en-ti.pdf",
+      },
+      {
+        title: "Tienes el control",
+        tono: "Tono: C",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 72 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/PX8eoO2noCk?si=JlwUj3suQTCesWlg",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/5-tienes-el-control.pdf",
+      },
+      {
+        title: "Grande como el cielo",
+        tono: "Tono: C",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 128 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/1NfMiWmqK34?si=Fh3I90fCP5hGbBh2",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/6-grande-como-el-cielo.pdf",
+      },
+      {
+        title: "Te veré",
+        tono: "Tono: Db",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 86 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/xfJVshCiRGA?si=OE6yCYv93QgtX6CL",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/7-te-vere.pdf",
+      },
+      {
+        title: "Tu rostro",
+        tono: "Tono: G",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 76 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/cS4KRK8Ycy4?si=CmTkz899otwQ01rj",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/8-tu-rostro.pdf",
+      },
+      {
+        title: "Hijo de Dios",
+        tono: "Tono: G",
+        compas: "Compas: 6/8",
+        tempo: "Tempo: 148 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/nwLVO2Of5KY?si=a-nzkO4Zl-5y3EjG",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/9-hijo-de-dios.pdf",
+      },
+      {
+        title: "Te siento en mi ser",
+        tono: "Tono: D",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 128 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/DPmSiYTFij4?si=1yjaxbQ-b4ZbCPED",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/10-te-siento-en-mi-ser.pdf",
+      },
+      {
+        title: "Despierta",
+        tono: "Tono: F",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 90 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/1hU-u2NbRnM?si=f4TPXyP58ih7DnyD",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/11-despierta.pdf",
+      },
+      {
+        title: "Venga tu reino",
+        tono: "Tono: Db",
+        compas: "Compas: 6/8",
+        tempo: "Tempo: 160 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/RgZQiXujo-0?si=CP_tVMDpBxs_bcZb",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/12-venga-tu-reino.pdf",
+      },
+      {
+        title: "Reflejo de tu gloria",
+        tono: "Tono: F-F#",
+        compas: "Compas: 6/8",
+        tempo: "Tempo: 154 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/rHwFWst9gWU?si=OScAY-5VUHtxNvF6",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/13-reflejo-de-tu-gloria.pdf",
+      },
+      {
+        title: "Tú estás aquí",
+        tono: "Tono: F",
+        compas: "Compas: 4/4",
+        tempo: "Tempo: 135 bpm",
+        urlYoutube:
+          "https://www.youtube.com/embed/HhYFcONZj-k?si=rsJLRVViV88QPFdj",
+        pdf: "https://iglesia-web.s3.us-west-2.amazonaws.com/SPM/Tienes+el+control/14-tu-estas-aqui.pdf",
+      },
+    ],
+  },
+  {
+    id: 2,
+    nameAlbum: "ADORA 24/7",
+    year: "2023",
+    totalSongs: "23",
+    image: Adora247,
+    songs: [
+      {
+        title: "La Bondad De Dios - Goodness Of God",
+        tono: "Tono F",
+        compas: "Compas 4/4",
+        duration: "Duración: 5:03",
+        urlYoutube:
+          "https://www.youtube.com/embed/PX8eoO2noCk?si=U8FLWfVSMqVEAPnk",
+        pdf: "/pdf/tienes_el_control.pdf",
+      },
+      {
+        title: "Me Acerco Una Vez Más - Draw Close Again",
+        tono: "Tono F",
+        compas: "Compas 4/4",
+        duration: "Duración: 5:03",
+        urlYoutube:
+          "https://www.youtube.com/embed/PX8eoO2noCk?si=U8FLWfVSMqVEAPnk",
+        pdf: "/pdf/tienes_el_control.pdf",
+      },
+      {
+        title: "Me Refugio - Shelter In",
+        tono: "Tono F",
+        compas: "Compas 4/4",
+        duration: "Duración: 5:03",
+        urlYoutube:
+          "https://www.youtube.com/embed/PX8eoO2noCk?si=U8FLWfVSMqVEAPnk",
+        pdf: "/pdf/tienes_el_control.pdf",
+      },
+      {
+        title: "Mi Esperanza Está En Jesús - Living Hope",
+        tono: "Tono F",
+        compas: "Compas 4/4",
+        duration: "Duración: 5:03",
+        urlYoutube:
+          "https://www.youtube.com/embed/PX8eoO2noCk?si=U8FLWfVSMqVEAPnk",
+        pdf: "/pdf/tienes_el_control.pdf",
+      },
+      {
+        title: "Mi Gran Deseo - One Desire",
+        tono: "Tono F",
+        compas: "Compas 4/4",
+        duration: "Duración: 5:03",
+        urlYoutube:
+          "https://www.youtube.com/embed/PX8eoO2noCk?si=U8FLWfVSMqVEAPnk",
+        pdf: "/pdf/tienes_el_control.pdf",
+      },
+    ],
+  },
+];
+
 export const discography = [];
 discography.push(
   {
+    id: 1,
     nameAlbum: "Tienes El Control",
     year: "2023",
     totalSongs: "14",
@@ -277,6 +471,7 @@ discography.push(
     ],
   },
   {
+    id: 2,
     nameAlbum: "ADORA 24/7",
     year: "2023",
     totalSongs: "23",
@@ -305,6 +500,7 @@ discography.push(
     ],
   },
   {
+    id: 3,
     nameAlbum: "Navidad, Vol.4 (Jesús es el motivo)",
     year: "2022",
     totalSongs: "18",
@@ -333,6 +529,7 @@ discography.push(
     ],
   },
   {
+    id: 4,
     nameAlbum: "Jesús (Track By Track Commentary)",
     year: "2021",
     totalSongs: "14",
@@ -361,6 +558,7 @@ discography.push(
     ],
   },
   {
+    id: 5,
     nameAlbum: "Jesús",
     year: "2021",
     totalSongs: "15",
@@ -389,6 +587,7 @@ discography.push(
     ],
   },
   {
+    id: 6,
     nameAlbum: "Navidad, Vol.3",
     year: "2020",
     totalSongs: "7",
@@ -417,6 +616,7 @@ discography.push(
     ],
   },
   {
+    id: 7,
     nameAlbum: "El Cielo en la Tierra (Pianos para Orar)",
     year: "2020",
     totalSongs: "10",
@@ -445,6 +645,7 @@ discography.push(
     ],
   },
   {
+    id: 8,
     nameAlbum: "Fragmentos del Cielo",
     year: "2018",
     totalSongs: "16",
@@ -473,6 +674,7 @@ discography.push(
     ],
   },
   {
+    id: 9,
     nameAlbum: "Vive en Mí",
     year: "2015",
     totalSongs: "13",
@@ -501,6 +703,7 @@ discography.push(
     ],
   },
   {
+    id: 10,
     nameAlbum: "Himnos",
     year: "2014",
     totalSongs: "10",
@@ -529,6 +732,7 @@ discography.push(
     ],
   },
   {
+    id: 11,
     nameAlbum: "Fiel",
     year: "2013",
     totalSongs: "13",
@@ -557,6 +761,7 @@ discography.push(
     ],
   },
   {
+    id: 12,
     nameAlbum: "Bichos Freak Con Alex Campos",
     year: "2012",
     totalSongs: "10",
@@ -585,6 +790,7 @@ discography.push(
     ],
   },
   {
+    id: 13,
     nameAlbum: "Él",
     year: "2011",
     totalSongs: "13",
@@ -613,6 +819,7 @@ discography.push(
     ],
   },
   {
+    id: 14,
     nameAlbum: "Jesus Freak",
     year: "2009",
     totalSongs: "13",
@@ -641,6 +848,7 @@ discography.push(
     ],
   },
   {
+    id: 15,
     nameAlbum: "Cielos Abiertos (En Vivo)",
     year: "2007",
     totalSongs: "11",
@@ -669,6 +877,7 @@ discography.push(
     ],
   },
   {
+    id: 16,
     nameAlbum: "Voy Buscando",
     year: "2005",
     totalSongs: "12",
