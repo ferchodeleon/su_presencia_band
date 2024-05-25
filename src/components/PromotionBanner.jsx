@@ -1,9 +1,6 @@
-import background from "../assets/img/background-promotion.webp";
-import soyPerdonado from "../assets/img/portada-soy-perdonado.webp";
-
 import "../styles/promotion_banner.css";
 
-export const PromotionBanner = () => {
+export const PromotionBanner = ({ background, soyPerdonado }) => {
   return (
     <>
       <section className="promotion-container">
