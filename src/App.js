@@ -7,7 +7,9 @@ import { Header } from "./components/Header";
 import { Error404 } from "./pages/Error404";
 import { Footer } from "./components/Footer";
 import { DiscographyPage } from "./pages/DiscographyPage";
+import { Chords } from "./components/Chords";
 import ScrollToTop from "./components/ScrollTop";
+import { ChordsPage } from "./pages/ChordsPage";
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/band" element={<Banda />} />
-          <Route path="/discography" element={<DiscographyPage />}></Route>
+          <Route path="/discography" element={<DiscographyPage />} />
+          <Route path="/discography/:id" element={<ChordsPage />} />
           <Route path="/videos" element={<Home />} />
           <Route path="/resourse" element={<Home />} />
           <Route path="/contact" element={<Home />} />
