@@ -8,9 +8,10 @@ export const DiscographyPage = () => {
     <div className="main-discography">
       <h2>Discografía</h2>
       <div className="discography-page-container">
-        {discography.map((album, index) => (
+        {discography.map((album) => (
           <Discography
-            key={index}
+            key={album.id}
+            id={album.id}
             discographyName={album.nameAlbum}
             year={album.year}
             totalSongs={album.totalSongs}
