@@ -92,12 +92,6 @@ export const links = [
     name: "Videos",
   },
   {
-    to: "https://www.youtube.com/watch?v=GfpgOBkwgmg&list=PLt7-BTVbUMJmX3Ol-4eNbWcLGdVea7CYc&ab_channel=SuPresenciaWorship",
-    target: true,
-    url: "resourse",
-    name: "Recursos",
-  },
-  {
     to: "https://www.nxtwave.band",
     target: true,
     url: "nxtwave",
