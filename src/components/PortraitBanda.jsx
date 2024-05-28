@@ -1,13 +1,11 @@
-import portrait from "../assets/img/banda/portrait.jpg";
-
 import "../styles/portrait_banda.css";
 
-export const PortraitBanda = () => {
+export const PortraitBanda = ({ ImagePortrait }) => {
   return (
     <>
       <div
         className="container-promotion"
-        style={{ backgroundImage: `url(${portrait})` }}
+        style={{ backgroundImage: `url(${ImagePortrait})` }}
       ></div>
     </>
   );
