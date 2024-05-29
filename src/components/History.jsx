@@ -1,7 +1,7 @@
-import { dataBand } from "../assets/local_data";
+// import { dataBand } from "../assets/local_data";
 import "../styles/history.css";
 
-export const History = () => {
+export const History = ({ dataBand }) => {
   return (
     <>
       {dataBand.map((info, index) => (
