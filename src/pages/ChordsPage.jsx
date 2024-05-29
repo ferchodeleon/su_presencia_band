@@ -1,15 +1,22 @@
 import { useParams } from "react-router-dom";
-import { discographyPdf } from "../assets/local_data";
+import { tienesElControl } from "../assets/data_album";
 import { Chords } from "../components/Chords";
+import Loading from "../components/Loading";
+import NotAlbum from "../components/NotAlbum";
 
 export const ChordsPage = () => {
   const { id } = useParams();
   const albumId = parseInt(id, 10);
-  const album = discographyPdf.find((album) => album.id === albumId);
+  const album = tienesElControl.find((album) => album.id === albumId);
 
   if (!album) {
-    return <h2>No se encontro el álbum</h2>;
+    return <NotAlbum />;
   }
 
-  return <Chords discography={album} />;
+  return (
+    <Loading
+      children={<Chords discography={album} />}
+      imageUrls={[album.image]}
+    />
+  );
 };
