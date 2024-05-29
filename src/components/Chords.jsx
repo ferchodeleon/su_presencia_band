@@ -57,31 +57,37 @@ export const Chords = ({ discography }) => {
             ) : null}
           </div>
           <div className="chords-list-title">
-            {discography.songs.map((song) => (
-              <Link
-                className={`chords-title-song ${
-                  selectedSongId === song.title ? "selected" : ""
-                }`}
-                onClick={() => {
-                  handleSongClick(song.urlYoutube);
-                  handlePdfClick(song.pdf);
-                  handleDetailClick(song);
-                }}
-              >
-                {song.title}
-              </Link>
-            ))}
+            {discography.songs.map((song) =>
+              song.title === "Disco 2" ? (
+                <h3>{song.title}</h3>
+              ) : (
+                <Link
+                  className={`chords-title-song ${
+                    selectedSongId === song.title ? "selected" : ""
+                  }`}
+                  onClick={() => {
+                    handleSongClick(song.urlYoutube);
+                    handlePdfClick(song.pdf);
+                    handleDetailClick(song);
+                  }}
+                >
+                  {song.title}
+                </Link>
+              )
+            )}
           </div>
-          <iframe
-            width="600rem"
-            height="315"
-            src={youtubeUrl}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          />
+          {youtubeUrl ? (
+            <iframe
+              width="600rem"
+              height="315"
+              src={youtubeUrl}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            />
+          ) : null}
           {discography.urlMultitrack ? (
             <Link
               className="chords-listen"
