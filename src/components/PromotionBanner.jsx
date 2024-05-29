@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/promotion_banner.css";
 
 export const PromotionBanner = ({ background, soyPerdonado }) => {
@@ -18,7 +19,12 @@ export const PromotionBanner = ({ background, soyPerdonado }) => {
               <p>
                 Lanzamiento <br /> soy perdonado
               </p>
-              <button>Ver más</button>
+              <Link
+                target="__blank"
+                to="https://www.youtube.com/watch?v=lN2Z_udKOVY&ab_channel=ElLugardeSuPresencia"
+              >
+                Ver más
+              </Link>
             </div>
           </div>
         </div>

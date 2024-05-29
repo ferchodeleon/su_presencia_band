@@ -42,20 +42,21 @@ section.promotion-container {
 }
 
 .promotion-info div p {
+  margin-bottom: 20px;
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-size: 1.3rem;
 }
 
-.promotion-info div button {
+.promotion-info div a {
   color: #FFF;
   font-size: 1rem;
   padding: 0.8rem 1rem;
   margin-top: 1rem;
   background-color: transparent;
   border: 1px solid #FFF;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 @media (max-width: 720px) {
