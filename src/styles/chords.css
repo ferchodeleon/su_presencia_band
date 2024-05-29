@@ -84,6 +84,12 @@
   width: max-content;
 }
 
+.chords-list-title h3 {
+  color: #B16A4E;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
 .selected {
   color: #B16A4E;
   text-decoration: underline;
