@@ -15,8 +15,8 @@ import JesusFreak from "../assets/img/discography/jesus_freak.jpg";
 import CielosAbiertos from "../assets/img/discography/cielos_abiertos_en_vivo.jpg";
 import VoyBuscando from "../assets/img/discography/voy_buscando.jpg";
 
-import BackgroundJuanMunoz from "../assets/img/banda/background_juan_munoz1.jpg";
-import BackgroundHistory1 from "../assets/img/banda/background-history-1_1.jpg";
+import BackgroundJuanMunoz from "../assets/img/banda/background_juan_munoz.jpg";
+import BackgroundHistory1 from "../assets/img/banda/background-history-1.jpg";
 
 const DiscographyImages = {
   TienesElControl,
