@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Banda } from "./pages/Banda";
 
 import "./styles/main.css";
@@ -7,19 +7,15 @@ import { Header } from "./components/Header";
 import { Error404 } from "./pages/Error404";
 import { Footer } from "./components/Footer";
 import { DiscographyPage } from "./pages/DiscographyPage";
-import { Chords } from "./components/Chords";
 import ScrollToTop from "./components/ScrollTop";
 import { ChordsPage } from "./pages/ChordsPage";
 
 function App() {
   return (
     <>
-      {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
-      <HashRouter>
+      <BrowserRouter>
         <ScrollToTop />
-        <Header
-        // color={"rgba(6, 6, 6, 0.5)"}
-        />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/band" element={<Banda />} />
@@ -31,8 +27,7 @@ function App() {
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
-      </HashRouter>
-      {/* </BrowserRouter> */}
+      </BrowserRouter>
     </>
   );
 }

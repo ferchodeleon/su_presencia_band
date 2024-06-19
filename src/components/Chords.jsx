@@ -10,8 +10,6 @@ export const Chords = ({ discography }) => {
   const [tempo, setTempo] = useState(discography.songs[0].tempo);
   const [selectedSongId, setSelectedSongId] = useState(null);
 
-  console.log("ALBUM", discography);
-
   const handleSongClick = (url) => {
     setYoutubeUrl(url);
   };
@@ -78,6 +76,7 @@ export const Chords = ({ discography }) => {
           </div>
           {youtubeUrl ? (
             <iframe
+              className="chords-video"
               width="600rem"
               height="315"
               src={youtubeUrl}

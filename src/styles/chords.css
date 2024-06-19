@@ -12,7 +12,7 @@
   position: absolute;
   bottom: -40px;
   left: 20%;
-  width: 30rem;
+  width: 20%;
 }
 
 .chords-album-container {
@@ -81,7 +81,7 @@
 }
 
 .chords-list-title a {
-  width: max-content;
+  width: fit-content;
 }
 
 .chords-list-title h3 {
@@ -140,6 +140,11 @@
   .chords-details {
     width: 100%;
   }
+
+  .chords-listen {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -159,4 +164,15 @@
   .chords-details {
     max-width: 100%;
   }
+
+  .chords-detail {
+    font-size: 1rem;
+  }
+
+  .chords-video {
+    width: 100%;
+    height: 15rem;
+  }
+
+
 }

@@ -13,6 +13,8 @@ export const ChordsPage = () => {
     return <NotAlbum />;
   }
 
+  console.log("Imagenes", album.songs.pdf);
+
   return (
     <Loading
       children={<Chords discography={album} />}
